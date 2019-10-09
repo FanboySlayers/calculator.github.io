@@ -1,0 +1,294 @@
+@font-face{
+    font-family: "digital";
+    src: url("fonts/digital-7.ttf") format("opentype");
+}
+
+@font-face{
+    font-family: "meeting";
+    src: url("fonts/SWReallyQuickStaffMeeting.ttf") format("opentype");
+}
+
+@font-face{
+    font-family: "logo";
+    src: url("fonts/Bulletto_Killa.ttf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    
+}
+
+html,body{
+    height: 100%;
+}
+
+#body-wrapper{
+    max-width: 2500px;
+    margin: 0 auto;
+     background: url(background-board-chart-590041.jpg) no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+}
+
+main, #keys-wrapper{
+    overflow:auto;
+}
+
+#header-wrapper h1{
+    text-align: center;
+    font-size: 325%;
+    font-family: meeting;
+    padding-top: 2%;
+    color:floralwhite;
+    text-transform: capitalize;
+}
+
+#calculator{
+    position:absolute;
+    width:35%;
+    left: 15%;
+    top: 25%;
+    border: 3px solid #424949;
+    background: linear-gradient(to bottom,#c1c1c1,#a3a3a3,#b2b2b2,#c1c1c1,#d1d1d1);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    padding: 0;
+    box-shadow: 0 -8px 10px rgba(0,0,0,0.45);
+    
+}
+
+#calculator-top-wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    transform: rotateX(15deg);
+    border-top-left-radius: 14%;
+    border-top-right-radius: 14%;
+    box-shadow: inset 0 -3px 5px 3px rgba(150,150,150,0.33), 0 3px 5px 4px rgba(150,150,150,0.3);
+    padding: 5% 1% 5% 1%;
+}
+
+#calculator-top-wrapper h4{
+    font-family: logo;
+    font-weight: normal;
+    color:cornsilk;
+    margin-left: 3%;
+    margin-top: 0.5%;
+}
+#calculator-top-wrapper h4 span{
+    padding: 1% 0.35% 1% 1%;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+#number-wrapper{
+    float: left;
+    width: 60%;
+}
+
+#symbol-wrapper{
+    float: right;
+    width: 40%;
+}
+
+.number, .symbol, #on, #clear{
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 3px 3px 5px grey;
+    border-radius: 10%;
+    
+}
+
+.number:active, .symbol:active, #on:active, #clear:active{
+    box-shadow: 0px 0px 0px grey;
+}
+
+.number:hover, #on:hover, #clear:hover{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.symbol:hover{
+    cursor: pointer;
+}
+
+
+
+#keys-wrapper{
+    
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 8%;
+    
+}
+
+.number{
+    width: 28%;
+    padding: 3% 1%;
+    margin: 1%;
+    background-color:aliceblue;
+}
+
+.symbol{
+    width: 40%;
+    padding: 1.5% 1%;
+    margin: 1%;
+    font-size:105%;
+    background-color: rgb(50,50,50);
+    color: aliceblue;
+}
+
+#symbol-wrapper #clear{
+    background-color: #ff696b;
+    color:aliceblue;
+}
+
+#symbol-wrapper .add{
+    padding: 18% 1%;
+    font-size: 120%;
+}
+
+
+#on{
+    width: 28%;
+    padding: 2% 1%;
+    margin: 1%;
+    background-color: cornflowerblue;
+    color: azure;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    
+}
+
+#clear{
+    width: 85%;
+    padding: 1%;
+    margin: 1%;
+}
+
+#display-wrapper{
+    margin-top: 2%;
+    
+}
+
+#display{
+    width:80%;
+    border: 1px solid black;
+    border-radius: 20%;
+    height: 2.5rem;
+    margin: 0 auto;
+    display: table;
+    background-color: #F5EDCD;
+}
+
+#display h3{
+    font-family: digital;
+    font-size: 185%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+   
+    
+}
+
+/*-----------------------MEDIA QUERIES---------------------------------*/
+
+
+@media screen and (max-width: 1250px) {
+  
+    #header-wrapper h1{
+        font-size: 275%;
+    }
+    
+    #calculator{
+        width: 47%;
+        left: 10%;
+    }
+    
+    .number, .symbol, #on, #clear{
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    
+    #symbol-wrapper .add{
+        padding-bottom: 25%;
+        padding-top: 25%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+     #header-wrapper h1{
+        width: 80%;
+         margin: 0 auto;
+    }
+     #calculator{
+        width: 60%;
+        left: 5%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 810px) {
+    #calculator{
+        left:0;
+        position: relative;
+        width: 90%;
+        margin: 20% auto;
+    }
+    
+
+   
+    
+}
+
+@media screen and (max-width: 625px) {
+    #header-wrapper h1{
+        font-size: 200%;
+    }
+    
+}
+
+@media screen and (max-width: 300px) {
+    #header-wrapper h1{
+        font-size: 125%;
+    }
+    .number{
+        width:25%;
+    }
+}
+
+@media screen and (max-height:820px) and (max-width:1100px) and (orientation: landscape){
+     #header-wrapper h1{
+        width: 100%;
+        font-size: 175%;
+    }
+        #calculator{
+            margin: 0% 5%;
+            width: 42%;
+            box-shadow: 0 0 0;
+           
+           
+        }
+    .number{
+        width:22%;
+    }
+    .number, .symbol, #on, #clear{
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    
+    #symbol-wrapper .add{
+        padding-bottom: 20%;
+        padding-top: 20%;
+    }
+    }
+

@@ -1,0 +1,53 @@
+.slider-wrapper{
+    width: 75%;
+    margin: 0 auto;
+    overflow: auto;
+    display: table;
+}
+
+#prev,#next,#slider{
+    float: left;
+   
+}
+#prev,#next{
+   margin-top: 25%;
+}
+
+#prev i,#next i{
+   font-size: 1000%; 
+    cursor: pointer;
+    
+}
+#slider{
+    width:80%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.two,.three{
+    display:none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

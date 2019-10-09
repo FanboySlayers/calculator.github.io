@@ -1,0 +1,1 @@
+the new Object creates an object that is separate(not mutable) and where the "this" keywoard is varibale given instaead of the window object; 
