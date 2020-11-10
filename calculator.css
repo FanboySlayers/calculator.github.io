@@ -228,7 +228,7 @@ main, #keys-wrapper{
 @media screen and (max-width: 1030px) {
      #header-wrapper h1{
         width: 80%;
-         margin: 5% auto 0 auto;
+         margin: 1% auto 2% auto;
     }
      #calculator{
         width: 100%;
