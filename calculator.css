@@ -227,12 +227,12 @@ main, #keys-wrapper{
 
 @media screen and (max-width: 1030px) {
      #header-wrapper h1{
-        width: 100%;
+        width: 80%;
          margin: 0 auto;
     }
      #calculator{
-        width: 60%;
-        left: 5%;
+        width: 100%;
+/*         left: 5%; */
     }
     
     
